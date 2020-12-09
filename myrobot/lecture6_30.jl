@@ -1,7 +1,6 @@
 function paint_gor(r)
     x=get_num_movements!(r,West)
     y=get_num_movements!(r,Sud)
-    side=Ost
     y_all=0
     while isborder(r,Nord)==false
         y_all=y_all+1
