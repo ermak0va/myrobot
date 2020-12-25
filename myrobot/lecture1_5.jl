@@ -1,5 +1,4 @@
 function mark_angles(r)
-    num_steps=[]
     x=0
     y=0
     while move_if_possible!(r,Sud)==true
