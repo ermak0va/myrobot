@@ -34,11 +34,11 @@ end
 
 function sort_stolb_neub_summ(M)
     vec_colons=[@view M[:,j] for j in 1:size(M,2)]
-    M=hcat(sortkey(summa,vec_colons))
+    M=hcat(sortkey(summa,vec_colons)...)
     return M
 end
 function sort_stolb_neub_zeros(M)
     vec_colons=[@view M[:,j] for j in 1:size(M,2)]
-    M=hcat(sortkey(k_zeros,vec_colons))
+    M=hcat(sortkey(k_zeros,vec_colons)...)
     return M
 end
